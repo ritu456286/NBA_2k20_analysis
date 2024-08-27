@@ -1,9 +1,9 @@
 import streamlit as st
 import pickle 
-import sklearn
+# import sklearn
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from PIL import Image
 
 model = pickle.load(open('model.sav', 'rb'))
@@ -40,10 +40,10 @@ def user_input():
     input_data = pd.DataFrame(user_input_data, index=[0])
     return input_data
 
-def plot_line():
-    m = model.coef_
-    b = model.intercept_
-    
+# def plot_line():
+#     m = model.coef_
+#     b = model.intercept_
+
 
 
 user_data_df = user_input()
